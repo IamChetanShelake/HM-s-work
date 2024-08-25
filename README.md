@@ -1,2 +1,2 @@
 # HM-s-work
-Internshio for website developmet for Harshal Marathe Sir .
+(Internship)-A website developmet for Harshal Marathe Sir .
