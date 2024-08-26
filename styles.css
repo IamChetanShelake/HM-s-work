@@ -10,6 +10,8 @@ body {
      padding: 20px;
      background-color: #333;
      color: #fff;
+     position: sticky;
+     top: 0px;
  }
  
  header .logo {
@@ -26,7 +28,11 @@ body {
  
  header nav ul li {
      margin: 0 15px;
+     padding: 3px;
  }
+ header nav ul li a:hover{
+    color: #ff6600;
+}
  
  header nav ul li a {
      color: #fff;
@@ -35,7 +41,7 @@ body {
  
  .hero {
      background: url('abc.jpg') no-repeat center center/cover;
-     height: 100vh;
+     height: 93vh;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -61,7 +67,225 @@ body {
      border-radius: 5px;
      font-size: 18px;
  }
- 
+ .contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.foot-area {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   position: relative; 
+   bottom: 0px;
+   width: 100%; 
+}
+
+ .contact {
+   background: url('2.jpg') no-repeat center center/cover;
+   height: 100vh; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+}
+
+.wrapper {
+   width: 420px;
+   background: rgba(255, 255, 255, 0.1); 
+      border: 2px solid rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(9px);
+   color: #0b0705;
+   border-radius: 12px;
+   padding: 60px 90px;
+}
+.services {
+   width: 100%;
+   text-align: center;
+   padding: 10vh 0vh;
+}
+.services h2{
+    text-align: center;
+    font-size:x-large;
+    text-transform: uppercase;
+    display: inline;
+    border-bottom: 4px solid #ff6600;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.service-body{
+width: 80%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+padding: 10vh 0vh;
+}
+.service-body .service-item{
+    width: 25%;
+    background-color: #fff;
+    padding: 2%;
+    box-shadow: 0px 0px 10px #cbcbcb;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    position: relative;
+}
+.service-item h3{
+    font-size:x-large;
+}
+.service-item p{
+    font-size:medium;
+    text-transform: capitalize;
+}
+.service-item .button{
+    position:absolute;
+    width: 100%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0px;
+    bottom: 0px;
+    display: none;
+}
+.service-item:hover .button{
+    display:block;
+
+}
+.service-item button{
+    margin-top: 20px;
+    background-color: crimson;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+.service-item a{
+    color: #fff;
+    text-decoration: none;
+}
+.service-item img{
+    width: 70px;
+    height: 70px;
+}
+.service-body .service-item:hover{
+    box-shadow: none;
+    cursor: pointer;
+    border: 2px solid #666;
+}
+.service-body .service-item:nth-child(1)
+{
+    background:linear-gradient(to bottom,#3ecc5f,#28a745 );
+}
+.service-body .service-item:nth-child(2)
+{
+    background:linear-gradient(to bottom, orange ,#f68235);
+}
+.service-body .service-item:nth-child(3)
+{
+    background:linear-gradient(to bottom, #5baaff ,#007bff);
+}
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    color: #666;
+}
+
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.foot-area {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   position: relative; /* Default position */
+   /* Stick to bottom */
+   bottom: -1px;
+   width: 100%; /* Full width */
+}
+
+.contact{
+       background: url('2.jpg') no-repeat center center/cover;
+       height: 600px;
+       
+        
+}
+.wrapper {
+   width: 420px;
+   background: rgba(255, 255, 255, 0.1); /* Adjusted for better visibility */
+   border: 2px solid rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(9px);
+   color: #fff;
+   border-radius: 12px;
+   padding: 60px 90px;
+   margin: 150px;
+ }
+
  footer {
      background-color: #333;
      color: #fff;
@@ -70,102 +294,4 @@ body {
  }
  
 
- .services {
-     padding: 50px;
-     text-align: center;
- }
  
- .services h2 {
-     font-size: 36px;
-     margin-bottom: 20px;
- }
- 
- .service-item {
-     margin: 20px 0;
- }
- 
- .service-item h3 {
-     font-size: 28px;
- }
- 
- .service-item p {
-     font-size: 18px;
-     color: #666;
- }
- .about {
-     padding: 50px;
-     text-align: center;
- }
- 
- .about h2 {
-     font-size: 36px;
-     margin-bottom: 20px;
- }
- 
- .about p {
-     font-size: 20px;
-     color: #666;
- }
- 
- .contact {
-     padding: 50px;
-     text-align: center;
- }
- 
- .contact h2 {
-     font-size: 36px;
-     margin-bottom: 20px;
- }
- 
- .contact form {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- 
- .contact input, .contact textarea {
-     width: 300px;
-     margin: 10px 0;
-     padding: 10px;
-     font-size: 18px;
-     resize: none;
- }
- 
- .contact button {
-     padding: 10px 20px;
-     background-color: #ff6600;
-     color: #fff;
-     border: none;
-     border-radius: 5px;
-     font-size: 18px;
-     cursor: pointer;
- }
- 
- .foot-area {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative; /* Default position */
-    /* Stick to bottom */
-    bottom: -1px;
-    width: 100%; /* Full width */
-}
-
-.contact{
-        background: url('2.jpg') no-repeat center center/cover;
-        height: 600px;
-        
-         
-}
-
-.wrapper {
-    width: 420px;
-    background: rgba(255, 255, 255, 0.1); /* Adjusted for better visibility */
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(9px);
-    color: #fff;
-    border-radius: 12px;
-    padding: 60px 90px;
-    margin: 150px;
-  }
