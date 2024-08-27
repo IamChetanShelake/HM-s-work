@@ -56,48 +56,24 @@ body {
     width: 100%;
     height: 100%;
  }
-.hero-content{
-    position: absolute;
+ .hero-content{
     width: 100%;
-    bottom: 10%;
-    padding: 30px 10px;
-    background-color:rgba(0,0,0, 0.5);
+    position: absolute;
+    bottom: 10vh;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.502);
     text-align: center;
-}
-
-.wrapper {
-   width: 420px;
-   background: rgba(255, 255, 255, 0.1); 
-      border: 2px solid rgba(255, 255, 255, 0.3);
-   backdrop-filter: blur(9px);
-   color: #0b0705;
-   border-radius: 12px;
-   padding: 60px 90px;
-}
- .hero-content h1 {
-     font-size:40px;
+    padding: 20px 0px;
+ }
+ .hero-content h1{
+    font-size:40px;
+    text-transform: capitalize;
     line-height: 0px;
+ }
+ .hero-content p{
+    font-size: x-large;
     text-transform: capitalize;
  }
- 
- .hero-content p {
-     font-size:x-large;
-     color: #c6c6c6;
-     text-transform: capitalize;
- }
- 
- .hero-content > button,.hero-content-btn{
-     background-color: #ff6600;
-     color: #fff;
-     padding: 10px 15px;
-     text-decoration: none;
-     border-radius: 5px;
-     font-size:medium;
- }
-
-
- 
-
 .services {
    width: 100%;
    text-align: center;
@@ -113,7 +89,7 @@ body {
     padding: 5px 10px;
 }
 .service-body{
-width: 80%;
+width: 90%;
 margin: auto;
 display: flex;
 justify-content: space-between;
@@ -179,65 +155,109 @@ padding: 10vh 0vh;
 {
     background:linear-gradient(to bottom, #5baaff ,#007bff);
 }
-.about {
-    padding: 50px;
-    text-align: center;
+.service-body .service-item:nth-child(4)
+{
+    background:linear-gradient(to bottom, #f36573 ,#dc3545);
 }
 
-.about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.ContactSection{
+    width: 100%;
+  background-image: url('Images/contactbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
 }
-
-.about p {
-    font-size: 20px;
-    color: #666;
-}
-
-.contact {
-    padding: 50px;
-    text-align: center;
-    background: url('Images/contactbg.jpg') no-repeat center center/cover; 
-    padding: 15vh 0vh;      
-}
-
-
-.wrapper {
-    width:30%;
+.ContactSectionBody{
+    width:auto;
+    height: 90vh;
     margin: auto;
-    background: rgba(255, 255, 255, 0.1); 
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: #fff;
-    border-radius: 12px;
-  }
-.contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact input, .contact textarea {
-    width: 300px;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 18px;
-    resize: none;
-}
-
-.contact button {
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-}
+   display: grid;
+   place-items: center;
+   
+ }
+ .ContactForm{
+   width:40%;
+    display: grid;
+    padding:0vh 5vh 5vh;
+    background-color: rgba(255, 255, 255,0.3);
+    box-shadow: 0px 0px 10px  #1d1d1d;
+    border-radius: 10px;
+ }
+ .ContactForm .NameFild{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap:0px 20px;
+ }
+ .NameFild > div{
+   display: grid;
+   width: 45%;
+ }
+ .ContactForm label{
+   font-size:medium;
+   font-weight: bold;
+   color: #1d1d1d;
+   margin-top: 10px;
+ }
+ .ContactForm > h2{
+   color: #fff;
+   font-size: xx-large;
+   text-transform: uppercase;
+   margin-bottom:10px;
+ }
+ .ContactForm input,textarea{
+   font-size: medium;
+   padding: 5px;
+   width: 100%;
+   resize: none;
+ }
+ .Buttons{
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+ }
+ .Buttons .Btn{
+   padding: 5px 10px;
+   font-size: medium;
+   font-weight: bold;
+   text-decoration: none;
+   background-color: transparent;
+   color:#fff;
+   cursor: pointer;
+ }
+ .Buttons .Btn:nth-child(2){
+   background-color: #28a745;
+   border:3px solid #28a745;
+ }
+ .Buttons .Btn:nth-child(1){
+   background-color: #dc3545;
+   border:3px solid #dc3545;
+ }
+ .Buttons .Btn:nth-child(2):hover{
+        box-shadow: 0px 0px 5px #28a745;
+ }
+ .Buttons .Btn:nth-child(1):hover{
+   box-shadow: 0px 0px 5px #dc3545;
+ }
+ 
+ @media (min-width:650px) and (max-width:950px){
+   
+   .LoginForm{
+     width:60%;
+   }
+ 
+ }
+ @media (min-width:100px) and (max-width:649px){
+   .ContactForm{
+     width:70%;
+   }
+   .NameFild > div{
+     display: grid;
+     width:100%;
+   }
+ 
+ } 
 
 .foot-area {
    background-color: #333;
