@@ -159,7 +159,50 @@ padding: 10vh 0vh;
 {
     background:linear-gradient(to bottom, #f36573 ,#dc3545);
 }
-
+.AboutSection{
+    width:100%;
+    padding: 5vh;
+}
+.AboutSectionBody{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    gap: 30px;
+}
+.AboutSectionBody .BodyRight{
+    border: #ff6600 solid 2px;
+    padding: 20px;
+}
+.AboutSectionBody .BodyRight h1{
+    font-size:45px;
+    color: #ff6600;
+}
+.AboutSectionBody .BodyLeft{
+    display: grid;
+    place-items: center;
+}
+.AboutSectionBody .BodyLeft p{
+    font-size: larger;
+    font-weight: bold;
+    text-align: justify;
+    color: #1d1d1d;
+}
+.AboutSectionBody .BodyLeft span{
+    margin-top:5vh;
+    display: block;
+    float: right;
+}
+.AboutSectionBody .BodyLeft button,.BodyLeft a{
+    background: #f68235;
+    color: #fff;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+.AboutSectionBody .BodyLeft button{
+    border: 3px  solid #f68235;
+    box-shadow: 0px 0px 5px #ff6600;
+}
 .ContactSection{
     width: 100%;
   background-image: url('Images/contactbg.jpg');
@@ -167,6 +210,7 @@ padding: 10vh 0vh;
   background-size: cover;
   background-position: center;
   height: auto;
+  margin-top: 20vh;
 }
 .ContactSectionBody{
     width:auto;
