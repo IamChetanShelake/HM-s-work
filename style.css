@@ -1,0 +1,338 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+header{
+  width: 100%;
+  background-color: #1d1d1d;
+  /* position: sticky;
+    top: 0px;
+    z-index: 1; */
+}
+.HeaderBody{
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    padding: 3px;
+}
+header nav ul li a:hover{
+   color: #ff6600;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: auto;
+}
+.HomeSection{
+    width: 100%;
+    height: 89vh;
+    background-color: rebeccapurple;
+    background-image: url('Images/Bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.HomeSectionBody{
+    width: 100%;
+    height: 89vh;
+    background-color: rgba(0, 0,0, 0.6);
+    display: grid;
+    place-items: center;
+}
+.HomesectionText{
+    color: #fff;
+    text-align: center;
+    margin-top:40vh;
+    /* filter: drop-shadow(0px 0px 5px  orangered); */
+}
+.HomesectionText h1{
+ font-size: 2.5rem;
+ background-color: rgba(255, 102, 0, 0.8);
+ padding: 3px 10px;
+}
+.HomesectionText p{
+    font-size: 1.5rem;
+   }
+
+   /* Service Section */
+ .ServiceSection{
+    width: 100%;
+    text-align: center;
+    padding: 10vh 0vh;
+ }
+ .ServiceSection h1{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 2rem;
+    border-bottom: solid orange ;
+    padding: 5px 5px;
+    border-radius: 10px;
+ }
+ .ServiceCards{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:100px 0px;
+    gap: 20px 60px;
+ }
+ .ServiceCard{
+   width:30vh;
+   height: 25vh;
+   border-radius: 10px;
+   background-color: #d4d4d463;
+   cursor: pointer;
+   padding:20px 10px;
+ }
+ .ServiceIcon{
+    width:100px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow:0px 0px 10px orange;
+    padding: 10px;
+ }
+ .ServiceCard:hover .ServiceIcon{
+    background: linear-gradient(200deg, orange,#fd652e);
+ }
+ .ServiceCard:hover{
+    box-shadow:0px 0px 5px gray;
+ }
+ .ServiceIcon img{
+    width: 70%;
+    height: 70%;
+    margin-top: 20px;
+ }
+ .ServiceText{
+    height: 50%;
+    margin-top: 15px;
+ }
+ .ServiceText h3{
+         text-align: center;
+         font-size:1.3rem;
+         color:#1d1d1d;
+         margin-top: 5px;
+
+ }
+ .ServiceText P{
+    font-size:0.90rem;
+    text-align: justify;
+    display: none;
+ }
+
+ .AboutSection{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, orange,#ff7c4d);
+    padding: 30px 0px;
+ }
+ .AboutBody #About-1{
+           width:80%;
+           margin: auto;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap:0px 30px;
+ }
+ .About-1-Left{
+    width:70%;
+    text-align: justify;
+ }
+
+ .About-1-Left h1{
+    font-size: 2rem;
+ }
+ .About-1-Left p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+ }
+ .About-1-Right{
+  width: 30%;
+ }
+ .About-1-Right img{
+      width: 100%;
+ }
+
+ .ContactSection{
+    width: 100%;
+    padding: 10vh 0vh;
+    background-color: rgba(190, 255, 203, 0.2);
+}
+.ContactUsImg{
+  width:100%;
+}
+.ContactUsImg img{
+  width: 100%;
+  height:100%;
+}
+.ContactBody{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 15px;
+  padding: 20px;
+}
+.ContactSectionLeft{
+  width:50%;
+  padding: 10px;
+}
+.ContactSectionLeft h2{
+      font-size: 1.3rem;
+      margin-top: 15px;
+}
+.ContactSectionLeft p{
+  font-size: 1rem;  
+}
+
+.ContactSectionRight{
+   width:50%;
+    margin: auto;
+   display: grid;
+   place-items: center;
+   background: linear-gradient(to left, orange,#ff7c4d);
+   border-radius: 10px;
+ }
+ .ContactForm{
+   width:auto;
+    display: grid;
+    padding: 5vh;
+    background-color: rgba(255, 255, 255,0.3);
+    box-shadow: 0px 0px 10px  #1d1d1d;
+    border-radius: 10px;
+ }
+ .ContactFormInstr{
+  font-size:medium;
+  color:red;
+ }
+ .ContactForm .NameFild{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap:0px 20px;
+ }
+ .NameFild > div{
+   display: grid;
+   width: 45%;
+ }
+ .ContactForm label{
+   font-size:medium;
+   font-weight: bold;
+   color: #1d1d1d;
+   margin-top: 10px;
+ }
+ .ContactForm > h2{
+   color: #fff;
+   font-size: xx-large;
+   text-transform: uppercase;
+   margin-bottom:10px;
+ }
+ .ContactForm input,textarea{
+   font-size: medium;
+   padding: 5px;
+   width: 100%;
+   resize: none;
+ }
+ .Buttons{
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+ }
+ .Buttons .Btn{
+   padding: 5px 10px;
+   font-size: medium;
+   font-weight: bold;
+   text-decoration: none;
+   background-color: transparent;
+   color:#fff;
+   cursor: pointer;
+ }
+ .Buttons .Btn:nth-child(2){
+   background-color: #28a745;
+   border:3px solid #28a745;
+ }
+ .Buttons .Btn:nth-child(1){
+   background-color: #dc3545;
+   border:3px solid #dc3545;
+ }
+ .Buttons .Btn:nth-child(2):hover{
+        box-shadow: 0px 0px 5px #28a745;
+ }
+ .Buttons .Btn:nth-child(1):hover{
+   box-shadow: 0px 0px 5px #dc3545;
+ }
+ 
+ @media (min-width:650px) and (max-width:950px){
+   
+   .LoginForm{
+     width:60%;
+   }
+ 
+ }
+ @media (min-width:100px) and (max-width:649px){
+   .ContactForm{
+     width:70%;
+   }
+   .NameFild > div{
+     display: grid;
+     width:100%;
+   }
+ 
+ } 
+
+.foot-area {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   position: relative;
+   bottom: -1px;
+   width: 100%; 
+}
+
+
+ footer {
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     padding: 10px;
+ }
+ 
+
+ 

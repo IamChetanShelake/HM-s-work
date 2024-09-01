@@ -5,151 +5,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantify Data Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .custom-shape-divider-bottom-1725122463 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1725122463 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 155px;
+        }
+
+        .custom-shape-divider-bottom-1725122463 .shape-fill {
+            fill: #ffffff;
+        }
+    </style>
 </head>
 
-<body onscroll="Scroll()">
-    <header class="">
+<body>
+    <header >
+        <div class="HeaderBody">
         <div class="logo animate__animated animate__fadeInDown">Quantify Data Solutions</div>
         <nav>
             <ul class="animate__animated animate__fadeInDown">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="#ContactUs">Contact Us</a></li>
             </ul>
         </nav>
+    </div>
     </header>
+    <main>
+        <section class="HomeSection">
+            <div class="custom-shape-divider-bottom-1725122463">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="HomeSectionBody">
+                <div class="HomesectionText">
+                    <h1>Data Annotation & Labeling for Sports Games</h1>
+                    <p>Transforming sports data into actionable insights.</p>
 
-    <section class="hero">
-        <div class="hero-slider">
-            <img src="Images/Bg_1.jpg" alt="BG_IMG" id="slideImg">
-        </div>
-        <div class="hero-content animate__animated animate__slideInUp">
-            <h1 class="">Data Annotation & Labeling for Sports Games</h1>
-            <p>Transforming sports data into actionable insights.</p>
-            <p style="font-size: small; color: #8f8f8f;">Scroll Down</p>
-            <img src="Images/icons8-double-down.gif" alt="" style="mix-blend-mode: screen;">
-        </div>
-    </section>
+                </div>
+                <div class="ScrollGif">
+                    <img src="Images/icons8-double-down.gif" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="ServiceSection">
+            <h1>Our Services</h1>
+            <div class="ServiceCards">
+                <div class="ServiceCard">
+                    <div class="ServiceIcon">
+                        <img src="Images/img-2.png" alt="icon">
+                    </div>
+                    <div class="ServiceText">
+                        <h3>Sports Analysis</h3>
+                        <p>Our team of experts delivers in-depth sports analysis across various sports, including ice
+                            hockey, soccer...</p>
+                    </div>
+                </div>
 
+                <div class="ServiceCard">
+                    <div class="ServiceIcon">
+                        <img src="Images/img-3.png" alt="icon">
+                    </div>
+                    <div class="ServiceText">
+                        <h3>Data Annotation & Labeling</h3>
+                        <p>With our meticulous data annotation and labeling services, we ensure that your datasets are
+                            accurate, reliable...</p>
+                    </div>
+                </div>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-body">
-            <div class="service-item">
-                <img src="Images/img-2.png" alt="Icon">
-                <h3>Sports Analysis</h3>
-                <p>Our team of experts delivers in-depth sports analysis across various sports, including ice hockey, soccer, basketball, American football, and volleyball. Using advanced analytics, we help teams, coaches, and analysts make data-driven decisions by providing detailed performance metrics, game strategies, and player assessments to elevate your competitive edge.</p>
-                <div class="button">
-                    <button><a href="services.html">Know More</a></button>
+                <div class="ServiceCard">
+                    <div class="ServiceIcon">
+                        <img src="Images/img-4.png" alt="icon">
+                    </div>
+                    <div class="ServiceText">
+                        <h3>Web & Software Development</h3>
+                        <p>we build robust, scalable, and user-friendly web and software solutions Whether you're
+                            looking for a custom website...</p>
+                    </div>
+                </div>
+
+                <div class="ServiceCard">
+                    <div class="ServiceIcon">
+                        <img src="Images/img1.jpeg" alt="icon">
+                    </div>
+                    <div class="ServiceText">
+                        <h3>Data Analysis & Machine Learning</h3>
+                        <p>We leverage advanced data science and machine learning techniques and tools to transform raw
+                            data into meaningful insights...</p>
+                    </div>
                 </div>
             </div>
-            <div class="service-item">
-                <img src="Images/img-3.png" alt="Icon">
-                <h3>Data Annotation & Labeling</h3>
-                <p>With our meticulous data annotation and labeling services, we ensure that your datasets are accurate, reliable, and ready for machine learning applications. Our experienced team works diligently to provide high-quality annotations that meet your specific needs.</p>
-                <div class="button">
-                    <button><a href="services.html">Know More</a></button>
+        </section>
+        <section class="AboutSection" id="AboutUs">
+            <div class="AboutBody">
+                <div id="About-1">
+                    <div class="About-1-Left">
+                        <h1>Why QDS ?</h1>
+                        <p>
+                            At QDS, we are committed to delivering quality, speed, and cost-efficiency. Our dedicated
+                            team of professionals brings a wealth of experience and a passion for innovation, ensuring
+                            that each project is executed with precision and excellence. We believe in building
+                            long-term partnerships with our clients by consistently delivering value and exceeding
+                            expectations.
+                        </p>
+                    </div>
+                    <div class="About-1-Right">
+                        <img src="Images/bgIllu.png" alt="Bg">
+                    </div>
                 </div>
             </div>
-            <div class="service-item">
-                <img src="Images/img-4.png" alt="Icon">
-                <h3>Web & Software Development</h3>
-                <p>At QDS, we build robust, scalable, and user-friendly web and software solutions. Whether you're looking for a custom website, an enterprise software solution, or a mobile app, our development team brings your vision to life with cutting-edge technology.</p>
-                <div class="button">
-                    <button><a href="services.html">Know More</a></button>
-                </div>
-            </div>
-            <div class="service-item">
-                <img src="Images/img1.jpeg" alt="Icon">
-                <h3>Data Analysis & Machine Learning</h3>
-                <p>We leverage advanced data science and machine learning techniques and tools to transform raw data into meaningful insights. Our services include predictive modeling, statistical analysis, and machine learning, helping you make informed business decisions.</p>
-                <div class="button">
-                    <button><a href="services.html">Know More</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="AboutSection">
-        <div class="AboutSectionBody">
-           <div class="BodyRight">
-                 <h1>Why Choose QDS?</h1>
-           </div>
-           <div class="BodyLeft">
-                 <p>At QDS, we are committed to delivering quality, speed, and cost-efficiency. Our dedicated team of professionals brings a wealth of experience and a passion for innovation, ensuring that each project is executed with precision and excellence. We believe in building
-                     long-term partnerships with our clients by consistently delivering value and exceeding expectations.
-                   <span> <button><a href="about.html">Know More..</a></button></span>
-                    </p>
-                  
-                </div>
-        </div>
-    </section>
-    <hr>
+        </section>
+    </main>
     <section class="ContactSection">
-        <div class="ContactSectionBody">
-            <form action="" method="post" class="ContactForm">
-                <h2>Conatact Us</h2>
-                <div class="NameFild">
-                    <div>
-                        <label>First Name</label>
-                        <input type="text" placeholder="First Name" required>
+        <div class="ContactBody">
+            <div class="ContactSectionLeft">
+                <!-- <h2><span><i class="fa-solid fa-phone"></i></span>  Contact </h2>
+                <p>+91 88xxxxxx76, +91 88xxxxxx76</p>
+                <h2><span><i class="fa-solid fa-envelope"></i></span> Email </h2>
+                <p> quantifysolutions@gmail.com</p>
+                <h2><span><i class="fa-solid fa-location-dot"></i></span>  Address</h2>
+                <p>Nashik-422009,Maharashtra,India</p> -->
+                <div class="ContactUsImg">
+                    <img src="Images/ConactIllu.png" alt="">
+                         </div>
+            </div>
+            <div class="ContactSectionRight" id="ContactUs">
+                <form action="" method="post" class="ContactForm">
+                    <p class="ContactFormInstr">*Fill the form carefully.All Feild are mandetory</p>
+                    <div class="NameFild">
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Middle Name" required>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div>
+                            <label>Mobile</label>
+                            <input type="text" placeholder="Your Mobile" required>
+                        </div>
                     </div>
-                    <div>
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Middle Name" required>
+                    <label>Message</label>
+                    <textarea rows="4" type="text" placeholder="Enter Yout Message Briefly" required></textarea>
+                    <div class="Buttons">
+                        <input class="Btn" type="reset">
+                        <input class="Btn" type="submit" value="Send Meassage">
                     </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div>
-                        <label>Mobile</label>
-                        <input type="text" placeholder="Your Mobile" required>
-                    </div>
-                </div>
-                <label>Message</label>
-                <textarea rows="4" type="text" placeholder="Enter Yout Message Briefly" required></textarea>
-                <div class="Buttons">
-                    <input class="Btn" type="reset">
-                    <input class="Btn" type="submit" value="Send Meassage">
-                </div>
 
-            </form>
+                </form>
+            </div>
         </div>
-
     </section>
 
     <footer>
         <p>&copy; 2024 Quantify Data Solutions. All rights reserved.</p>
     </footer>
-    <script>
-        let SlideImg = document.getElementById("slideImg");
-        let Slider = () => {
-            let ImgSrc = ['Images/Bg_1.jpg', 'Images/Bg_2.jpeg', 'Images/Bg_3.jpg'];
-            let Slide = 0;
-            setInterval(() => {
-                if (Slide < ImgSrc.length) {
-                    SlideImg.src = ImgSrc[Slide];
-                    Slide++;
-                }
-                else {
-                    Slide = 0;
-                }
-            }, 5000)
-        }
-        Slider();
-
-
-        const scrollLeftOffset = window.scrollX;
-        const scrollTopOffset = window.scrollY;
-        let Scroll = () => {
-            console.log(scrollTopOffset);
-        }
-
-
 
     </script>
 </body>
