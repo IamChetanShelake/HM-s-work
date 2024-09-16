@@ -34,6 +34,9 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -103,20 +106,29 @@ header nav ul li a {
     height: auto;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding:100px 0px;
-    gap: 20px 60px;
+    gap: 20px; 
  }
  .ServiceCard{
    width:30vh;
    height: 25vh;
    border-radius: 10px;
-   background-color: #d4d4d463;
+   /* background-color: #d4d4d463; */
    cursor: pointer;
    padding:20px 10px;
+   border:1px solid rgba(0, 0,0, 0.3);
+   box-shadow:0px 0px 15px rgba(0, 0,0, 0.2);
+
+   animation: fadeOut 2s forwards;
+   animation-timeline: scroll();
  }
+ .ServiceCard:hover{
+  box-shadow: none;
+}
+
  .ServiceIcon{
     width:100px;
     height: 100px;
@@ -129,9 +141,8 @@ header nav ul li a {
  .ServiceCard:hover .ServiceIcon{
     background: linear-gradient(200deg, orange,#fd652e);
  }
- .ServiceCard:hover{
-    box-shadow:0px 0px 5px gray;
- }
+ 
+ 
  .ServiceIcon img{
     width: 70%;
     height: 70%;
@@ -226,7 +237,7 @@ header nav ul li a {
     margin: auto;
    display: grid;
    place-items: center;
-   background: linear-gradient(to left, orange,#ff7c4d);
+   /* background: linear-gradient(to left, orange,#ff7c4d); */
    border-radius: 10px;
  }
  .ContactForm{
@@ -234,11 +245,11 @@ header nav ul li a {
     display: grid;
     padding: 5vh;
     background-color: rgba(255, 255, 255,0.3);
-    box-shadow: 0px 0px 10px  #1d1d1d;
+    box-shadow: 0px 0px 20px rgba(0, 0,0, 0.3);
     border-radius: 10px;
  }
  .ContactFormInstr{
-  font-size:medium;
+  font-size:small;
   color:red;
  }
  .ContactForm .NameFild{
@@ -255,7 +266,7 @@ header nav ul li a {
    font-size:medium;
    font-weight: bold;
    color: #1d1d1d;
-   margin-top: 10px;
+   margin: 10px 0px 3px 0px;
  }
  .ContactForm > h2{
    color: #fff;
